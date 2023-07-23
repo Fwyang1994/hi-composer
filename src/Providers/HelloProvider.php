@@ -29,6 +29,17 @@ class HelloProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/../Routes/web.php');
 
         $this->publishConfigFiles();
+
+        $this->registerCommands();
+    }
+
+    protected function registerCommands()
+    {
+        $commands = [
+            \Hero\HelloComposer\Console\Commands\HiComposer::class,
+        ];
+        $this->commands($commands);
+        
     }
 
     protected function publishConfigFiles()
