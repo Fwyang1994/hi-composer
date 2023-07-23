@@ -3,6 +3,6 @@
 
 ## 安装
 ```
-composer require Fwyang1994/hi-composer:dev-main
+composer require hero1994/hello-composer:dev-main
 ```
 
