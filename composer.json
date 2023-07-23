@@ -1,0 +1,25 @@
+{
+    "name": "hero/hello-composer",
+    "description": "test composer",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hero\\HelloComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "foolish",
+            "email": "yfw_1994@163.com"
+        }
+    ],
+    "require": {},
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Hero\\HelloComposer\\Providers\\HelloProvider"
+            ]
+        }
+    }
+}
